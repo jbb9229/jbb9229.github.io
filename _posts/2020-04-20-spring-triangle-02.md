@@ -12,8 +12,6 @@ tags:
 
 > 해당 포스트는 [백기선 님의 강의](https://www.inflearn.com/course/spring_revised_edition)를 바탕으로 작성되었습니다. 
 
-![](https://media.vlpt.us/images/jbb9229/post/d44f9f4a-8839-494e-9f27-0bcfe859c708/1600px-Spring_Framework_logo.png)
-
 # AOP (Aspect Oriented Programming) 
 
 흩어진 코드 
