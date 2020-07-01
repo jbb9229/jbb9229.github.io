@@ -10,9 +10,9 @@ tags:
  - Spring-PSA
 ---
 
-> 해당 포스트는 [백기선 님의 강의](https://www.inflearn.com/course/spring_revised_edition)를 바탕으로 작성되었습니다. 
-
 # PSA (Portable Service Abstraction) 
+> 해당 포스트는 [백기선 님의 강의](https://www.inflearn.com/course/spring_revised_edition) 를 바탕으로 작성되었습니다. 
+
 **환경의 변화와 관계없이 일관된 방식의 기술 접근 환경을 제공하려는 추상화 구조** 
 
 

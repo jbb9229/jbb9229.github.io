@@ -9,11 +9,11 @@ tags:
  - Spring
  - Spring-IoC
  - Spring-IoC-Container
----
-
-> 해당 포스트는 [백기선 님의 강의](https://www.inflearn.com/course/spring_revised_edition) 를 바탕으로 작성되었습니다. 
+--- 
 
 # IoC (Inversion of Control) 
+> 해당 포스트는 [백기선 님의 강의](https://www.inflearn.com/course/spring_revised_edition) 를 바탕으로 작성되었습니다.
+
 일반적인 의존성 설정과 관리는 
 
 ``` 

@@ -8,11 +8,10 @@ categories:
 tags: 
  - Spring
  - Spring-AOP
----
+--- 
 
-> 해당 포스트는 [백기선 님의 강의](https://www.inflearn.com/course/spring_revised_edition)를 바탕으로 작성되었습니다. 
-
-# AOP (Aspect Oriented Programming) 
+# AOP (Aspect Oriented Programming)
+> 해당 포스트는 [백기선 님의 강의](https://www.inflearn.com/course/spring_revised_edition) 를 바탕으로 작성되었습니다. 
 
 흩어진 코드 
 ``` 
