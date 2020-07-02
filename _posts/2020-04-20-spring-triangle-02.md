@@ -1,5 +1,5 @@
 ---
-title: Spring Triangle (스프링의 핵심 3요소) - 2. AOP
+title: Spring Triangle - 2.AOP
 date: 2020-04-20 17:45:20
 photos:
  - https://media.vlpt.us/images/jbb9229/post/d44f9f4a-8839-494e-9f27-0bcfe859c708/1600px-Spring_Framework_logo.png
@@ -11,7 +11,9 @@ tags:
 --- 
 
 # AOP (Aspect Oriented Programming)
-> 해당 포스트는 [백기선 님의 강의](https://www.inflearn.com/course/spring_revised_edition) 를 바탕으로 작성되었습니다. 
+**관점 지향 프로그래밍**
+
+<br/>
 
 흩어진 코드 
 ``` 
@@ -41,14 +43,12 @@ BBBB
 
 } 
 ``` 
-흩어져 있는 코드들은 AAAA 혹은 BBBB를 수정하려면  
+흩어져 있는 코드들은 AAAA 혹은 BBBB를 수정하려면 <br/>
 AAAA와 BBBB가 있는 모든 클래스의 메서드를 찾아가서 변경해야 합니다. 
 
+<br/>
 
-  
-
-모아 놓은 코드 
-
+모아 놓은 코드
 ``` 
 Class A { 
 
@@ -268,3 +268,5 @@ Spring AOP를 적용하는 방법은 여러가지가 있고,
 Annotation 없이도 적용을 하는 방법이 있습니다. 
 
 Annotation을 작성하여 적용하는 방법이 좀 더 명시적입니다.
+
+> 해당 포스트는 [백기선 님의 강의](https://www.inflearn.com/course/spring_revised_edition) 를 바탕으로 작성되었습니다. 
