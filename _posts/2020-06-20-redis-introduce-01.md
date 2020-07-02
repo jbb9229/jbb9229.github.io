@@ -9,6 +9,8 @@ tags:
  - NoSQL
  - Redis
 ---
+*RE*mote *DI*ctionary *S*erver
+
 최근 접한 프로젝트에 Redis가 적용되어 있었습니다. <br/>
 이전까지 Redis를 사용해 본 적이 없기 때문에 관련 내용 정리합니다.
 
