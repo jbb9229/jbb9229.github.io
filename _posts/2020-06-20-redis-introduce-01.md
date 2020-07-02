@@ -48,7 +48,7 @@ SnapShot 사용 시 다음과 같은 고려사항이 있습니다
 - Swqp/SnapShot에 대한 Disk I/O가 많아질 수 있음
 
 >
-*AOF* <br/>
+*AOF*  <br/>
 Redis의 모든 write/update 연산 자체를 모두 log 파일에 기록하는 형태입니다. <br/>
 서버가 재 시작할 시 write/update를 순차적으로 재실행, 복구 합니다.
 
