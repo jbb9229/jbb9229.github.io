@@ -46,7 +46,7 @@ Hibernate와 Jpa를 사용하는 경우에는 Jpa Transaction Manager를 사용�
 
 ## [Spring Cache Manager](https://docs.spring.io/spring-framework/docs/current/javadoc-api/) 
 
-Cache 또한 @Cacheable | @CacheEvict와 같은 Annotation을 이용하여 구현체는 신경 쓰지 않고 
+Cache 또한 @Cacheable / @CacheEvict와 같은 Annotation을 이용하여 구현체는 신경 쓰지 않고 
 
 javax.cache, ehcache 등의 기술을 바꾸어 사용할 수 있습니다. 
 
