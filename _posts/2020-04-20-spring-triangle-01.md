@@ -16,10 +16,10 @@ tags:
 
 일반적인 의존성 설정과 관리는 
 
-``` 
+```java
 class Controller { 
 
-private Repository repo = new Repository(); 
+    private Repository repo = new Repository(); 
 
 } 
 ``` 
@@ -27,13 +27,13 @@ private Repository repo = new Repository();
 하지만 IoC 는 **Inversion of Control** (제어의 역전)이라고 하며, <br/> 
 직접 의존성을 관리하는 것이 아닌 
 
-``` 
+```java
 class  Controller { 
-private Repository repo; 
-
-public Controller(Repository repo) { 
-this.repo; 
-} 
+    private Repository repo; 
+    
+    public Controller(Repository repo) { 
+        this.repo; 
+    } 
 
 } 
 ``` 
@@ -60,24 +60,22 @@ IoC Container 에 있는 Bean들을 가져오는 방법을 제공합니다. <br/
 IoC Container 밖에 있는 객체에는 의존성 주입이 가능하지만 지양하는 편입니다. 
 
 
-``` 
+```java
 @Autowired 
 ApplicationContext applicationContext; 
 
-public OwnerController(OwnerRepository clinicService,  
-VisitRepository visits,  
+public OwnerController(OwnerRepository clinicService, 
+        VisitRepository visits,  
             ApplicationContext applicationContext) { 
-this.owners = clinicService; 
-this.visits = visits; 
-this.applicationContext = applicationContext; 
+    this.owners = clinicService; 
+    this.visits = visits; 
+    this.applicationContext = applicationContext; 
 } 
 
 @GetMapping("/bean") 
 @ResponseBody 
 public String bean() { 
-return "bean : " + applicationContext.getBean(OwnerRepository.class)  
-     + "
-" + "owners : " + this.owners; 
+    return "bean : " + applicationContext.getBean(OwnerRepository.class) + "owners : " + this.owners; 
 } 
 ``` 
   
@@ -106,7 +104,7 @@ IoC Container를 사용하는 이유 중 하나입니다.
 > 객체 중에서 Spring IoC Container가 관리하는 객체를 Bean이라고 합니다. 
 
 간단하게 비교를 하자면 
-``` 
+```java
 OwnerController ownerController = new OwnerController(); 
 OwnerController bean = applicationContext.getBean(OwnerController.class); 
 ``` 
@@ -152,7 +150,7 @@ Spring Boot Project 같은 경우 @SpringBootApplication 이러한 Annotation이
 
 해당 객체의 빈 생성 여부를 Test 코드를 작성하여 알아볼 수 있습니다. 
 
-``` 
+```java
 @RunWith(SpringRunner.class) 
 @SpringBootTest 
 public class SampleControllerTest { 
@@ -162,9 +160,9 @@ ApplicationContext applicationContext;
 
 @Test 
 public void testDI() { 
-SampleController bean =  
-         applicationContext.getBean(SampleController.class); 
-assertThat(bean).isNotNull(); 
+    SampleController bean =  
+             applicationContext.getBean(SampleController.class); 
+    assertThat(bean).isNotNull(); 
 } 
      
 } 
@@ -180,14 +178,14 @@ assertThat(bean).isNotNull();
 
 **Java 설정 파일 예시** 
 
-``` 
+```java
 @Configuration 
 public class SampleConfig { 
 
-@Bean 
-public SampleController sampleController() { 
-return new SampleController(); 
-} 
+    @Bean 
+    public SampleController sampleController() { 
+        return new SampleController(); 
+    } 
 
 } 
 ``` 
@@ -205,27 +203,27 @@ Autowired Annotation은 Field, Setter, Constructor 등 다양한 곳에서 사�
 
 예제 코드를 보면 
 
-``` 
+```java
 class  Controller { 
 
-private Repository repo; 
+    private Repository repo; 
 
-public Controller(Repository repo) { 
-this.repo; 
-} 
+    public Controller(Repository repo) { 
+        this.repo; 
+    } 
 
 } 
 ``` 
 이처럼 생성자를 사용해서 주입을 받고 있는데 
 
-``` 
+```java
 class  Controller { 
-private Repository repo; 
+    private Repository repo; 
 
-@Autowired 
-public Controller(Repository repo) { 
-this.repo; 
-} 
+    @Autowired 
+    public Controller(Repository repo) { 
+        this.repo; 
+    } 
 
 } 
 ``` 
@@ -238,11 +236,11 @@ this.repo;
 
 생성자가 아닌 Field에 주입받고 싶다면 
 
-``` 
+```java
 class  Controller { 
 
-@Autowired 
-private Repository repo; 
+    @Autowired 
+    private Repository repo; 
 
 } 
 ``` 
@@ -253,15 +251,15 @@ private Repository repo;
 
 Setter로 주입한다면 
 
-``` 
+```java
 class Controller { 
 
-private Repository repo; 
-
-@Autowired 
-public void setRepo(Repository repo) { 
-this.repo = repo; 
-} 
+    private Repository repo; 
+    
+    @Autowired 
+    public void setRepo(Repository repo) { 
+        this.repo = repo; 
+    } 
 
 } 
 ``` 
@@ -292,24 +290,24 @@ Field Injection이나 Setter Injection 은 Reference 없이도  <br/>
 
 생성자로 주입 시 예제 코드에 Final이 붙은 이유 
 
-``` 
+```java
 @Controller 
 class OwnerController { 
 
-private static final String VIEWS_OWNER_CREATE_OR_UPDATE_FORM =  
-     "owners/createOrUpdateOwnerForm"; 
-
-// final을 굳이 붙이지 않아도 상관은 없지만 한번 주입받은  
-        // Reference가 다른 Reference로 바뀌지 않도록 보장하기 위함 
-private final OwnerRepository owners; 
-
-private VisitRepository visits; 
-
-public OwnerController(OwnerRepository clinicService, 
-     VisitRepository visits) { 
-this.owners = clinicService; 
-this.visits = visits; 
-} 
+    private static final String VIEWS_OWNER_CREATE_OR_UPDATE_FORM =  
+         "owners/createOrUpdateOwnerForm"; 
+    
+    // final을 굳이 붙이지 않아도 상관은 없지만 한번 주입받은  
+    // Reference가 다른 Reference로 바뀌지 않도록 보장하기 위함 
+    private final OwnerRepository owners; 
+    
+    private VisitRepository visits; 
+    
+    public OwnerController(OwnerRepository clinicService, 
+         VisitRepository visits) { 
+        this.owners = clinicService; 
+        this.visits = visits; 
+    } 
 } 
 ```
 

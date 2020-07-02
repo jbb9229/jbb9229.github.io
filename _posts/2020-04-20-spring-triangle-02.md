@@ -16,30 +16,30 @@ tags:
 <br/>
 
 흩어진 코드 
-``` 
+```java
 Class A { 
 
-method a ( ) { 
-AAAA 
-오늘은 2020년 1월 4일 입니다. 
-BBBB 
-} 
-
-method b ( ) { 
-AAAA 
-지금 시간은 18시 45분 입니다. 
-BBBB 
-} 
+    method a ( ) { 
+        AAAA 
+        오늘은 2020년 1월 4일 입니다. 
+        BBBB 
+    } 
+    
+    method b ( ) { 
+        AAAA 
+        지금 시간은 18시 45분 입니다. 
+        BBBB 
+    } 
 
 } 
 
 Class B { 
 
-method c ( ) { 
-AAAA 
-저는 배가 고픕니다. 
-BBBB 
-} 
+    method c ( ) { 
+        AAAA 
+        저는 배가 고픕니다. 
+        BBBB 
+    } 
 
 } 
 ``` 
@@ -49,34 +49,34 @@ AAAA와 BBBB가 있는 모든 클래스의 메서드를 찾아가서 변경해�
 <br/>
 
 모아 놓은 코드
-``` 
+```java
 Class A { 
 
-method a ( ) { 
-오늘은 2020년 1월 4일 입니다. 
+    method a ( ) { 
+        오늘은 2020년 1월 4일 입니다. 
+    } 
+    
+    method b ( ) { 
+        지금 시간은 18시 45분 입니다. 
+    } 
+    
 } 
-
-method b ( ) { 
-지금 시간은 18시 45분 입니다. 
-} 
-
-} 
-
+    
 Class B { 
-
-method c ( ) { 
-저는 배가 고픕니다. 
+    
+    method c ( ) { 
+        저는 배가 고픕니다. 
+    } 
+    
 } 
-
-} 
-
+    
 Class AAAABBBB { 
-
-method aaaabbbb (JoinPoint point) { 
-AAAA 
-point.execute( ); 
-BBBB 
-} 
+    
+    method aaaabbbb (JoinPoint point) { 
+        AAAA 
+        point.execute( ); 
+        BBBB 
+    } 
 
 } 
 ``` 
@@ -116,7 +116,7 @@ Design Pattern을 이용하여 AOP를 구현하는 방법입니다.
 
 #### 예제 - 기존 코드 건드리지 않고 새 기능 추가하기 
 
-``` 
+```java
 public interface Payment { 
 
     void pay(int amount); 
@@ -185,14 +185,14 @@ public class StoreTest {
 Annotation은 주석같은 코멘트이므로 기능이 동작하지는 않습니다  
 이 어노테이션을 읽어서 실행하는 Aspect를 생성해야 합니다. 
 
-``` 
+```java
 @GetMapping("/owners/new") 
 @LogExecutionTime 
 public String initCreationForm(Map<String, Object> model) { 
 
-Owner owner = new Owner(); 
-model.put("owner", owner); 
-return VIEWS_OWNER_CREATE_OR_UPDATE_FORM; 
+    Owner owner = new Owner(); 
+    model.put("owner", owner); 
+    return VIEWS_OWNER_CREATE_OR_UPDATE_FORM; 
 
 } 
 ``` 
@@ -200,7 +200,7 @@ return VIEWS_OWNER_CREATE_OR_UPDATE_FORM;
 
 실제 기능이 동작할 Aspect 생성 
 
-``` 
+```java
 @Component 
 @Aspect 
 public class LogAspect { 
@@ -233,7 +233,7 @@ public class LogAspect {
 
 이렇게 작성한 상태에서 Application을 실행해서 해당 메소드를 동작시켜보면 
 
-``` 
+```
 2020-01-04 22:22:31.659  INFO 999 --- [nio-8080-exec-8] o.s.samples.petclinic.owner.LogAspect    : StopWatch '': running time = 5072556 ns 
 
 --------------------------------------------- 
