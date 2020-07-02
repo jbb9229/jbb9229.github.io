@@ -9,12 +9,10 @@ tags:
  - NoSQL
  - Redis
 ---
-*RE*mote *DI*ctionary *S*erver
+# REDIS (*RE*mote *DI*ctionary *S*erver)
 
 최근 접한 프로젝트에 Redis가 적용되어 있었습니다. <br/>
 이전까지 Redis를 사용해 본 적이 없기 때문에 관련 내용 정리합니다.
-
-# Redis의 특징
 
 ## NoSQL ?
 일반적인 관계형 데이터베이스와는 다른 형태르 데이터를 저장 및 검색하는 데이터베이스 이며, 비 관계형 데이터베이스라고 표현하기도 합니다.<br/>
