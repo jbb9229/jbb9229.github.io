@@ -12,6 +12,7 @@ tags:
 
 # PSA (Portable Service Abstraction)  
 **환경의 변화와 관계없이 일관된 방식의 기술 접근 환경을 제공하려는 추상화 구조** <br/>
+
  다양한 기술에 Service Abstraction을 제공하고 있는데 그 예시로는
 
 ## Web MVC와 관련된 Service Abstraction

@@ -12,6 +12,8 @@ tags:
 --- 
 
 # IoC (Inversion of Control) 
+**제어의 역전**
+
 일반적인 의존성 설정과 관리는 
 
 ``` 
