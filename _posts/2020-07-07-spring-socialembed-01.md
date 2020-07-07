@@ -292,7 +292,7 @@ public class EmbedControllerTest {
 
 ### Sample Request
 
-```http request
+```
     http://localhost:{port-number}/api/socialembed?url={social-url}
 ```
 
