@@ -1,5 +1,5 @@
 ---
-title: \[SpringBoot] 소셜 게시글을 가져오자!
+title: SpringBoot - 소셜 게시글을 가져오자!
 date: 2020-07-07 11:30:50
 photos:
  - https://images.velog.io/images/jbb9229/post/2e922545-6d6e-4e66-b2d6-1200ed9de0ae/localhost_8080_%20(4).png
@@ -63,7 +63,7 @@ HTML을 반환받는 API Server를 만들어볼 예정입니다.
 
 ### Controller
 
-```java
+```
 @RestController
 public class EmbedController {
 
@@ -77,11 +77,11 @@ public class EmbedController {
     }
 
 }
-```	
+```
 
 ### Service
 
-```java
+```
 @Service
 public class EmbedService {
 
@@ -267,7 +267,7 @@ public class EmbedService {
 ```
 
 ### Test
-```java
+```
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class EmbedControllerTest {
@@ -291,7 +291,7 @@ public class EmbedControllerTest {
 
 ### Sample Request
 
-```http request
+```
     http://localhost:{port-number}/api/socialembed?url={social-url}
 ```
 
