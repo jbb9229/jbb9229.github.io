@@ -142,8 +142,8 @@ menu_icons:
   schedule: calendar
   tags: tags
   archives: archive
-  sitemap: sitemap
-  commonweal: heartbeat
+#  sitemap: sitemap
+#  commonweal: heartbeat
 
 
 
