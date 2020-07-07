@@ -37,6 +37,8 @@ HTML을 반환받는 API Server를 만들어볼 예정입니다.
 > 실제 프로젝트에서는 에디터의 발췌과정에서 URL을 분석하여
 발췌 결과물을 소셜 게시물로 표현했지만 편의상 API의 형태로 작성하였습니다.
 
+### [Git Repository](https://github.com/jbb9229/SocialEmbedAPI)
+
 ### Spring Boot Setting
 
 예제 프로젝트에서 사용할 기술은 다음과 같습니다.
