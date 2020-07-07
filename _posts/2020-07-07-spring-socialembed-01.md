@@ -96,7 +96,6 @@ public class EmbedService {
      * 파라미터로 받아온 URL이 어떤 소셜의 URL인지 분기
      * @param paramUrl
      * @return
-     * @throws URISyntaxException
      */
     private static String getDomainName(String paramUrl) throws URISyntaxException {
         URI uri = new URI(paramUrl);
