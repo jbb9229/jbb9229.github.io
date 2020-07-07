@@ -65,7 +65,7 @@ HTML을 반환받는 API Server를 만들어볼 예정입니다.
 
 ### Controller
 
-```
+```java
 @RestController
 public class EmbedController {
 
@@ -83,7 +83,7 @@ public class EmbedController {
 
 ### Service
 
-```
+```java
 @Service
 public class EmbedService {
 
@@ -269,7 +269,7 @@ public class EmbedService {
 ```
 
 ### Test
-```
+```java
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 public class EmbedControllerTest {
@@ -293,7 +293,7 @@ public class EmbedControllerTest {
 
 ### Sample Request
 
-```
+```http request
     http://localhost:{port-number}/api/socialembed?url={social-url}
 ```
 
