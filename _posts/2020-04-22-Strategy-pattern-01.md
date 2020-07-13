@@ -31,9 +31,10 @@ tags:
 
 # 📚&nbsp;Strategy Pattern (전략 패턴)
 
-
 우리가 처음 알아볼 패턴은 **Strategy Pattern(전략 패턴)** 입니다.
 <br/>
+
+[Code Example](https://github.com/jbb9229/DesignPatterns/tree/master/src/strategy)
 
 ## 🤔&nbsp;Strategy Pattern(전략 패턴)이란 무엇일까요?
 >✍🏼&nbsp; 전략 패턴은 알고리즘을 정의하고 각각을 캡슐화하여 교환해서 사용할 수 있도록 만듭니다. <br/>
