@@ -1,6 +1,10 @@
 ---
 title: VO - Value Object? DTO?
 date: 2020-03-12 09:44:20
+lastmod: 2020-03-12 09:44:20
+sitemap:
+changefreq: weekly
+priority: 1.0
 photos:
  - https://media.vlpt.us/images/jbb9229/post/acb7245d-e894-43ce-b639-7f80ce5d48d7/question-mark-2318030_1280.jpg
 categories:

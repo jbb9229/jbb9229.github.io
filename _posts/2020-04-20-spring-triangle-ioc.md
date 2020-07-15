@@ -1,6 +1,10 @@
 ---
 title: Spring Triangle (스프링의 핵심 3요소) - 1. IoC Container
 date: 2020-04-20 15:45:20
+lastmod: 2020-04-20 15:45:20
+sitemap:
+changefreq: weekly
+priority: 1.0
 photos:
  - https://media.vlpt.us/images/jbb9229/post/d44f9f4a-8839-494e-9f27-0bcfe859c708/1600px-Spring_Framework_logo.png
 categories:

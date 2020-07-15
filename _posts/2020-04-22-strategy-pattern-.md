@@ -1,6 +1,10 @@
 ---
 title: Design Patterns - Strategy Pattern
 date: 2020-04-22 13:44:20
+lastmod: 2020-04-22 13:44:20
+sitemap:
+changefreq: weekly
+priority: 1.0
 photos:
  - https://media.vlpt.us/images/jbb9229/post/12a0bea4-69d1-47a2-ab1d-ae428d11f16e/wordcloud.png
 categories:
