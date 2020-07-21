@@ -1,7 +1,7 @@
 ---
 title: SpringBoot - 소셜 게시글을 가져오자!
 date: 2020-07-07 11:30:50
-lastmod: 2020-07-07 11:30:50
+lastmod: 2020-07-21 09:14:20
 sitemap:
 changefreq: weekly
 priority: 1.0
@@ -16,6 +16,10 @@ tags:
  - Instagram
  - Twitter
  - Tiktok
+ - Facebook API
+ - Instagram API
+ - Twitter API
+ - Tiktok API
  - SocialAPI
 ---
 # SNS Embed?

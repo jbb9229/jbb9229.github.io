@@ -1,7 +1,7 @@
 ---
 title: VO - Value Object? DTO?
 date: 2020-03-12 09:44:20
-lastmod: 2020-03-12 09:44:20
+lastmod: 2020-07-21 09:14:20
 sitemap:
 changefreq: weekly
 priority: 1.0

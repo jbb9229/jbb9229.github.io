@@ -1,7 +1,7 @@
 ---
 title: Redis - Redis!?
 date: 2020-06-20 11:21:50
-lastmod: 2020-06-20 11:21:50
+lastmod: 2020-07-21 09:14:20
 sitemap:
 changefreq: weekly
 priority: 1.0
