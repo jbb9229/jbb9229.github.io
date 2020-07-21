@@ -3,7 +3,7 @@ title: SpringBoot - 소셜 게시글을 가져오자!
 date: 2020-07-07 11:30:50
 lastmod: 2020-07-21 09:14:20
 sitemap:
-changefreq: weekly
+changefreq: always
 priority: 1.0
 photos:
  - https://images.velog.io/images/jbb9229/post/2e922545-6d6e-4e66-b2d6-1200ed9de0ae/localhost_8080_%20(4).png
