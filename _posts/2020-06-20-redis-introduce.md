@@ -3,8 +3,8 @@ title: Redis - Redis!?
 date: 2020-06-20 11:21:50
 lastmod: 2020-07-21 09:14:20
 sitemap:
-changefreq: always
-priority: 1.0
+    changefreq: always
+    priority: 1.0
 photos:
  - https://media.vlpt.us/images/jbb9229/post/226b55e4-efa7-4601-9c1f-580ca8e46a63/1100px_Redis_Logo_01.png
 categories:
