@@ -3,7 +3,7 @@ title: Spring Triangle - 2.AOP
 date: 2020-04-20 17:45:20
 lastmod: 2020-07-21 09:14:20
 sitemap:
-    changefreq: always
+    changefreq: weekly
     priority: 1.0
 photos:
  - https://media.vlpt.us/images/jbb9229/post/d44f9f4a-8839-494e-9f27-0bcfe859c708/1600px-Spring_Framework_logo.png
