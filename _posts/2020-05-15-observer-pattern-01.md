@@ -1,5 +1,5 @@
 ---
-title: Design Patterns - Observer Pattern
+title: Design Patterns - Observer Pattern [1]
 date: 2020-05-15 13:44:20
 lastmod: 2020-07-28 09:14:20
 sitemap:
