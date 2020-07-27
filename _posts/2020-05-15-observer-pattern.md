@@ -115,6 +115,8 @@ Gettet/Setter 메소드가 들어있을 수 도 있습니다.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이런 방법을 사용하면 여러 객체에서 동일한 데이터를 제어하도록<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;하는 것에 비해 더 깔끔한 객체지향 디자인을 만들 수 있습니다.
 <br/>
+
+
 ### 🕎&nbsp;옵저버 패턴: 예제 클래스 다이어그램
 
 ![](https://images.velog.io/images/jbb9229/post/d2f53f0e-3615-4a2c-adbb-d410ae011159/Untitled%20Diagram%20(7).png)
